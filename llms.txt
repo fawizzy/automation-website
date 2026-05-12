@@ -25,7 +25,7 @@ Fawaz Oduola is a workflow automation specialist based in Ibadan, Nigeria, worki
 n8n, HubSpot, Salesforce, Slack, Notion, Airtable, Google Sheets, Google Drive, Stripe, Typeform, Gmail, Outlook, PostgreSQL, MySQL, REST APIs, webhooks, OpenAI, and more.
 
 ## Contact
-Email: EMAIL@YOURDOMAIN.COM
+Email: oduolafawaz@gmail.com
 Website: https://fawazodulola.com
 Location: Ibadan, Nigeria (remote-first, works with clients globally)
 
