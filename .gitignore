@@ -1,0 +1,9 @@
+# Only website files are tracked — everything else is excluded
+*
+
+# Website files
+!index.html
+!sitemap.xml
+!robots.txt
+!llms.txt
+!.gitignore

@@ -1,0 +1,33 @@
+# Fawaz Oduola — n8n Workflow Automation Specialist
+
+## Who I Am
+Fawaz Oduola is a workflow automation specialist based in Ibadan, Nigeria, working remotely with small B2B teams worldwide. He builds internal automations using n8n that eliminate manual operational work — connecting tools like HubSpot, Salesforce, Slack, Notion, Airtable, and Google Sheets into automated workflows.
+
+## What I Do
+- CRM automation: HubSpot and Salesforce sync, deduplication, auto-enrichment, stage updates
+- Lead routing: Automatically assign inbound leads to the right rep based on rules and triggers
+- Follow-up sequences: Trigger actions based on deal stage, behavior, or inactivity
+- Proposal and document generation: Auto-generate proposals, contracts, and SOWs from CRM data
+- Reporting and dashboards: Automated pipeline health reports and performance metrics to Slack or email
+- Support ticket automation: Classify, route, and resolve repetitive support tickets without human input
+
+## Proven Results
+- 200+ hours saved per month for an IT operations team by automating 800 monthly account lockout tickets
+- Proposal generation time reduced from 2 weeks to 25 minutes for a B2B enterprise sales team
+- 70% of customer support tickets resolved automatically for a gaming and payments platform
+
+## Services and Pricing
+- Starter (one workflow): $500–$1,200 one-time
+- Growth (3–5 connected workflows): $2,000–$4,500 one-time
+- Retainer (ongoing builds and maintenance): $800–$1,500/month
+
+## Tools I Work With
+n8n, HubSpot, Salesforce, Slack, Notion, Airtable, Google Sheets, Google Drive, Stripe, Typeform, Gmail, Outlook, PostgreSQL, MySQL, REST APIs, webhooks, OpenAI, and more.
+
+## Contact
+Email: EMAIL@YOURDOMAIN.COM
+Website: https://fawazodulola.com
+Location: Ibadan, Nigeria (remote-first, works with clients globally)
+
+## Ideal Clients
+Small B2B companies with 10–100 employees using 5 or more SaaS tools who are spending significant team time on manual data entry, CRM updates, report generation, or repetitive communication tasks.

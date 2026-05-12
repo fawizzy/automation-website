@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fawaz Oduola — n8n Workflow Automation Specialist | Ibadan, Nigeria</title>
+  <meta name="description" content="Fawaz Oduola builds internal workflow automations for small B2B teams using n8n. CRM sync, lead routing, proposal generation, and reporting — remote from Ibadan, Nigeria." />
+  <meta name="keywords" content="n8n automation freelancer, workflow automation Nigeria, HubSpot automation consultant, sales ops automation, n8n specialist Africa, B2B automation Ibadan" />
+  <meta name="author" content="Fawaz Oduola" />
+  <link rel="canonical" href="https://fawazodulola.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fawaz Oduola — n8n Workflow Automation Specialist" />
+  <meta property="og:description" content="I build internal automations for small B2B teams using n8n — CRM sync, lead routing, proposal generation, and reporting. Remote from Nigeria." />
+  <meta property="og:url" content="https://fawazodulola.com/" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Fawaz Oduola — n8n Workflow Automation" />
+  <meta name="twitter:description" content="I build internal automations for small B2B teams using n8n. Remote from Ibadan, Nigeria." />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "name": "Fawaz Oduola",
+        "jobTitle": "n8n Workflow Automation Specialist",
+        "url": "https://fawazodulola.com",
+        "email": "EMAIL@YOURDOMAIN.COM",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ibadan",
+          "addressCountry": "NG"
+        },
+        "knowsAbout": ["n8n", "workflow automation", "HubSpot", "Salesforce", "CRM automation", "sales operations"]
+      },
+      {
+        "@type": "Service",
+        "name": "n8n Workflow Automation",
+        "provider": { "@type": "Person", "name": "Fawaz Oduola" },
+        "description": "Custom internal workflow automations for small B2B teams using n8n — CRM sync, lead routing, proposal generation, and automated reporting.",
+        "areaServed": "Worldwide",
+        "offers": [
+          { "@type": "Offer", "name": "Starter Workflow", "price": "500", "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "Full Ops Build", "price": "2000", "priceCurrency": "USD" },
+          { "@type": "Offer", "name": "Retainer", "price": "800", "priceCurrency": "USD" }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0A0A0A;
+      --surface: #121212;
+      --surface-2: #1A1A1A;
+      --border: #252525;
+      --border-light: #333;
+      --accent: #F97316;
+      --accent-2: #FB923C;
+      --accent-dim: rgba(249, 115, 22, 0.08);
+      --accent-glow: rgba(249, 115, 22, 0.2);
+      --text: #EBEBEB;
+      --text-muted: #888;
+      --text-dim: #444;
+      --mono: 'IBM Plex Mono', monospace;
+      --sans: 'Syne', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: radial-gradient(circle, #ffffff07 1px, transparent 1px);
+      background-size: 32px 32px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.25rem 2rem;
+      background: rgba(10,10,10,0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-logo {
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    /* ── HERO ── */
+    .hero-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 8rem 2rem 4rem;
+    }
+
+    .hero-content { max-width: 740px; }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--accent);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      padding: 0.4rem 0.85rem;
+      border: 1px solid rgba(249,115,22,0.3);
+      border-radius: 2px;
+    }
+
+    .hero-tag-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: blink 2s infinite;
+    }
+
+    @keyframes blink {
+      0%,100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+
+    .hero h1 {
+      font-size: clamp(2.1rem, 4.8vw, 3.75rem);
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--accent);
+    }
+
+    .hero-sub {
+      font-family: var(--mono);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      max-width: 510px;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.9rem 1.8rem;
+      background: var(--accent);
+      color: #fff;
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-2);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.9rem 1.8rem;
+      background: transparent;
+      color: var(--text-muted);
+      font-family: var(--mono);
+      font-size: 0.82rem;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      border: 1px solid var(--border-light);
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--text-muted);
+      color: var(--text);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 3rem;
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .stat-num {
+      font-family: var(--mono);
+      font-size: 1.75rem;
+      font-weight: 600;
+      color: var(--text);
+      display: block;
+    }
+
+    .stat-label {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .hero-nodes {
+      position: absolute;
+      right: -30px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 380px;
+      height: 380px;
+      opacity: 0.13;
+      pointer-events: none;
+    }
+
+    /* ── SHARED SECTION ── */
+    section {
+      position: relative;
+      z-index: 1;
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 0.6rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.5rem, 3vw, 2.3rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 3rem;
+    }
+
+    .section-divider {
+      max-width: 1100px;
+      margin: 0 auto;
+      border: none;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── AUTOMATE ── */
+    .automate-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1px;
+      border: 1px solid var(--border);
+      background: var(--border);
+    }
+
+    .automate-card {
+      background: var(--surface);
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.2s;
+    }
+
+    .automate-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .automate-card:hover { background: var(--surface-2); }
+    .automate-card:hover::after { transform: scaleX(1); }
+
+    .card-icon {
+      width: 42px; height: 42px;
+      border-radius: 8px;
+      background: var(--accent-dim);
+      border: 1px solid rgba(249,115,22,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+      font-size: 1.1rem;
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+
+    .card-desc {
+      font-family: var(--mono);
+      font-size: 0.77rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ── PACKAGES ── */
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .package-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      position: relative;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .package-card:hover {
+      border-color: var(--border-light);
+      transform: translateY(-2px);
+    }
+
+    .package-card.featured {
+      border-color: var(--accent);
+      background: var(--surface-2);
+    }
+
+    .package-card.featured::before {
+      content: 'MOST POPULAR';
+      position: absolute;
+      top: -1px; right: 1.5rem;
+      background: var(--accent);
+      color: #fff;
+      font-family: var(--mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.12em;
+      padding: 0.25rem 0.65rem;
+    }
+
+    .package-tier {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 0.4rem;
+    }
+
+    .package-name {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 0.25rem;
+    }
+
+    .package-price {
+      font-family: var(--mono);
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .package-price span {
+      color: var(--text);
+      font-size: 1.2rem;
+    }
+
+    .package-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin-bottom: 2rem;
+    }
+
+    .package-features li {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .package-features li::before {
+      content: '→';
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 0.05em;
+    }
+
+    /* ── CASE STUDIES ── */
+    .cases-grid {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--border);
+    }
+
+    .case-card {
+      background: var(--surface);
+      padding: 2.5rem;
+      display: grid;
+      grid-template-columns: 1.2fr 1.5fr 1.5fr 1fr;
+      gap: 2.5rem;
+      align-items: start;
+      transition: background 0.2s;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .case-card:last-child { border-bottom: none; }
+    .case-card:hover { background: var(--surface-2); }
+
+    .case-industry {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid rgba(249,115,22,0.3);
+      padding: 0.2rem 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .case-label {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.45rem;
+    }
+
+    .case-text {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .case-result-num {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--accent);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+
+    .case-result-text {
+      font-family: var(--mono);
+      font-size: 0.73rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ── CONTACT ── */
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .contact-info h2 {
+      font-size: clamp(1.5rem, 3vw, 2.3rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+      font-family: var(--mono);
+      font-size: 0.83rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .contact-email {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--mono);
+      font-size: 0.88rem;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 1rem 1.25rem;
+      border: 1px solid rgba(249,115,22,0.25);
+      transition: border-color 0.2s, background 0.2s;
+      word-break: break-all;
+    }
+
+    .contact-email:hover {
+      border-color: var(--accent);
+      background: var(--accent-dim);
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .form-group label {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: var(--mono);
+      font-size: 0.83rem;
+      padding: 0.75rem 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+      resize: vertical;
+      -webkit-appearance: none;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: var(--text-dim);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: var(--accent);
+    }
+
+    .form-group textarea { min-height: 120px; }
+
+    #form-status {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-align: center;
+      display: none;
+      margin-top: 0.5rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    footer p {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--text-dim);
+    }
+
+    /* ── FADE ANIMATIONS ── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      .case-card {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+      .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav-links { display: none; }
+      .hero-nodes { display: none; }
+      .hero-stats { gap: 1.75rem; }
+      .case-card { grid-template-columns: 1fr; gap: 1.25rem; }
+      footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">// Fawaz Oduola</a>
+    <ul class="nav-links">
+      <li><a href="#automate">Services</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#cases">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero-wrap">
+    <div class="hero">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="hero-tag-dot"></span>
+          n8n Automation Specialist · Remote from Nigeria
+        </div>
+        <h1>I build internal automations for small B2B teams — so your ops run <em>without the manual work.</em></h1>
+        <p class="hero-sub">You're using 5+ tools that don't talk to each other. I connect them, automate the repetitive parts, and give your team back the hours they spend on data entry and chasing follow-ups.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Book a Free 20-min Call →</a>
+          <a href="#cases" class="btn-secondary">See past work</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <span class="stat-num">200+</span>
+            <span class="stat-label">Hours saved / month</span>
+          </div>
+          <div>
+            <span class="stat-num">10×</span>
+            <span class="stat-label">Faster proposals</span>
+          </div>
+          <div>
+            <span class="stat-num">70%</span>
+            <span class="stat-label">Tickets automated</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Decorative node diagram -->
+      <svg class="hero-nodes" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="n8n workflow node diagram">
+        <circle cx="200" cy="200" r="22" stroke="#F97316" stroke-width="2"/>
+        <circle cx="320" cy="110" r="15" stroke="#F97316" stroke-width="1.5"/>
+        <circle cx="330" cy="290" r="15" stroke="#F97316" stroke-width="1.5"/>
+        <circle cx="90"  cy="110" r="15" stroke="#F97316" stroke-width="1.5"/>
+        <circle cx="80"  cy="290" r="15" stroke="#F97316" stroke-width="1.5"/>
+        <circle cx="200" cy="55"  r="10" stroke="#F97316" stroke-width="1"/>
+        <circle cx="200" cy="345" r="10" stroke="#F97316" stroke-width="1"/>
+        <line x1="200" y1="200" x2="320" y2="110" stroke="#F97316" stroke-width="1.2" stroke-dasharray="5 5"/>
+        <line x1="200" y1="200" x2="330" y2="290" stroke="#F97316" stroke-width="1.2" stroke-dasharray="5 5"/>
+        <line x1="200" y1="200" x2="90"  y2="110" stroke="#F97316" stroke-width="1.2" stroke-dasharray="5 5"/>
+        <line x1="200" y1="200" x2="80"  y2="290" stroke="#F97316" stroke-width="1.2" stroke-dasharray="5 5"/>
+        <line x1="200" y1="200" x2="200" y2="55"  stroke="#F97316" stroke-width="1.2" stroke-dasharray="5 5"/>
+        <line x1="200" y1="200" x2="200" y2="345" stroke="#F97316" stroke-width="1.2" stroke-dasharray="5 5"/>
+        <circle cx="200" cy="200" r="7" fill="#F97316"/>
+        <circle cx="320" cy="110" r="5" fill="#F97316" opacity="0.55"/>
+        <circle cx="330" cy="290" r="5" fill="#F97316" opacity="0.55"/>
+        <circle cx="90"  cy="110" r="5" fill="#F97316" opacity="0.55"/>
+        <circle cx="80"  cy="290" r="5" fill="#F97316" opacity="0.55"/>
+        <circle cx="200" cy="55"  r="3" fill="#F97316" opacity="0.35"/>
+        <circle cx="200" cy="345" r="3" fill="#F97316" opacity="0.35"/>
+      </svg>
+    </div>
+  </div>
+
+  <hr class="section-divider" />
+
+  <!-- WHAT I AUTOMATE -->
+  <section id="automate">
+    <p class="section-label fade-up">What I Automate</p>
+    <h2 class="section-title fade-up">The work that's eating your team's time</h2>
+    <div class="automate-grid fade-up">
+      <div class="automate-card">
+        <div class="card-icon">⚡</div>
+        <h3 class="card-title">CRM & Pipeline</h3>
+        <p class="card-desc">HubSpot and Salesforce sync, deduplication, auto-enrichment, stage updates — your CRM reflects reality without manual input.</p>
+      </div>
+      <div class="automate-card">
+        <div class="card-icon">🎯</div>
+        <h3 class="card-title">Lead Routing & Follow-up</h3>
+        <p class="card-desc">Route inbound leads to the right rep instantly. Trigger follow-up sequences based on behavior, deal stage, or inactivity.</p>
+      </div>
+      <div class="automate-card">
+        <div class="card-icon">📄</div>
+        <h3 class="card-title">Proposal & Doc Generation</h3>
+        <p class="card-desc">Pull data from your CRM, generate proposals, contracts, or SOWs automatically. Cut proposal time from days to minutes.</p>
+      </div>
+      <div class="automate-card">
+        <div class="card-icon">📊</div>
+        <h3 class="card-title">Reporting & Dashboards</h3>
+        <p class="card-desc">Automatic pipeline health summaries and performance metrics delivered to your inbox or Slack — no manual pulls.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- PACKAGES -->
+  <section id="packages">
+    <p class="section-label fade-up">Packages</p>
+    <h2 class="section-title fade-up">Pick what fits. Upgrade when you're ready.</h2>
+    <div class="packages-grid fade-up">
+
+      <div class="package-card">
+        <p class="package-tier">Starter</p>
+        <h3 class="package-name">One Workflow</h3>
+        <p class="package-price"><span>$500 – $1,200</span> / one-time</p>
+        <ul class="package-features">
+          <li>1 end-to-end automated workflow</li>
+          <li>Integration with up to 3 tools</li>
+          <li>Testing & error handling included</li>
+          <li>Documentation + handoff call</li>
+          <li>14-day support after delivery</li>
+        </ul>
+        <a href="#contact" class="btn-secondary" style="width:100%;justify-content:center;">Get started →</a>
+      </div>
+
+      <div class="package-card featured">
+        <p class="package-tier">Growth</p>
+        <h3 class="package-name">Full Ops Build</h3>
+        <p class="package-price"><span>$2,000 – $4,500</span> / project</p>
+        <ul class="package-features">
+          <li>3–5 connected interdependent workflows</li>
+          <li>Integration across your full tool stack</li>
+          <li>Custom error handling & Slack alerts</li>
+          <li>SOPs and documentation for your team</li>
+          <li>30-day support + 1 revision round</li>
+        </ul>
+        <a href="#contact" class="btn-primary" style="width:100%;justify-content:center;">Book a call →</a>
+      </div>
+
+      <div class="package-card">
+        <p class="package-tier">Retainer</p>
+        <h3 class="package-name">Ongoing Ops</h3>
+        <p class="package-price"><span>$800 – $1,500</span> / month</p>
+        <ul class="package-features">
+          <li>New workflows as your ops evolve</li>
+          <li>Maintenance and monitoring</li>
+          <li>Priority support (48h response)</li>
+          <li>Monthly ops review call</li>
+          <li>Cancel anytime — no lock-in</li>
+        </ul>
+        <a href="#contact" class="btn-secondary" style="width:100%;justify-content:center;">Let's talk →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- CASE STUDIES -->
+  <section id="cases">
+    <p class="section-label fade-up">Case Studies</p>
+    <h2 class="section-title fade-up">Real workflows. Real results.</h2>
+    <div class="cases-grid fade-up">
+
+      <div class="case-card">
+        <div>
+          <span class="case-industry">IT Operations</span>
+          <p class="case-label">Client</p>
+          <p class="case-text">Mid-size SaaS company, 200+ employees, global IT team managing thousands of employee accounts.</p>
+        </div>
+        <div>
+          <p class="case-label">Problem</p>
+          <p class="case-text">800 account lockout tickets per month. Each took 35 minutes of IT time to resolve manually across 3 systems.</p>
+        </div>
+        <div>
+          <p class="case-label">Solution</p>
+          <p class="case-text">n8n workflow auto-resolves lockouts by verifying identity signals, updating Active Directory, and notifying the user — no human in the loop.</p>
+        </div>
+        <div>
+          <p class="case-result-num">200+</p>
+          <p class="case-result-text">hours saved per month from a single workflow</p>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div>
+          <span class="case-industry">B2B Sales</span>
+          <p class="case-label">Client</p>
+          <p class="case-text">Enterprise software vendor, 5-person sales team, pursuing government and corporate contracts.</p>
+        </div>
+        <div>
+          <p class="case-label">Problem</p>
+          <p class="case-text">Proposal creation for each solicitation required 2 weeks of manual research, writing, and formatting.</p>
+        </div>
+        <div>
+          <p class="case-label">Solution</p>
+          <p class="case-text">n8n + AI pipeline pulls solicitation data, matches to product capabilities, and outputs an 80% complete proposal draft automatically.</p>
+        </div>
+        <div>
+          <p class="case-result-num">25min</p>
+          <p class="case-result-text">to generate a proposal that used to take 2 weeks</p>
+        </div>
+      </div>
+
+      <div class="case-card">
+        <div>
+          <span class="case-industry">Customer Support</span>
+          <p class="case-label">Client</p>
+          <p class="case-text">Gaming & payments platform with high-volume support operation and repetitive payment queries.</p>
+        </div>
+        <div>
+          <p class="case-label">Problem</p>
+          <p class="case-text">Support agents spent the majority of their time answering identical payment status, refund, and account questions.</p>
+        </div>
+        <div>
+          <p class="case-label">Solution</p>
+          <p class="case-text">n8n classifies incoming tickets, resolves routine cases automatically, and only escalates to humans when real judgment is required.</p>
+        </div>
+        <div>
+          <p class="case-result-num">70%</p>
+          <p class="case-result-text">of support tickets resolved without a human agent</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="section-divider" />
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-wrapper fade-up">
+      <div class="contact-info">
+        <p class="section-label">Contact</p>
+        <h2>Let's figure out what to automate first.</h2>
+        <p>No pitch decks. Just a 20-minute conversation about where your team is spending time it shouldn't be. If there's a fit, I'll tell you exactly what I'd build and what it would cost.</p>
+        <a href="mailto:EMAIL@YOURDOMAIN.COM" class="contact-email">
+          <span>✉</span> EMAIL@YOURDOMAIN.COM
+        </a>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Alex Johnson" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Work Email</label>
+          <input type="email" id="email" name="email" placeholder="alex@company.com" required />
+        </div>
+        <div class="form-group">
+          <label for="tools">Tools You Use</label>
+          <input type="text" id="tools" name="tools" placeholder="HubSpot, Slack, Notion, Airtable..." />
+        </div>
+        <div class="form-group">
+          <label for="problem">What manual work do you want gone?</label>
+          <textarea id="problem" name="problem" placeholder="e.g. We manually update our CRM after every call — it takes 2 hours a day across the team..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Send Message →</button>
+        <p id="form-status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Fawaz Oduola — Ibadan, Nigeria · n8n Automation Specialist</p>
+    <p>Powered by n8n</p>
+  </footer>
+
+  <script>
+    // Scroll-triggered fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 70);
+        }
+      });
+    }, { threshold: 0.08 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Contact form — opens mailto with filled data
+    function handleSubmit(e) {
+      e.preventDefault();
+      const f = e.target;
+      const subject = encodeURIComponent('Automation inquiry from ' + f.name.value);
+      const body = encodeURIComponent(
+        'Name: ' + f.name.value +
+        '\nEmail: ' + f.email.value +
+        '\nTools: ' + f.tools.value +
+        '\n\nProblem:\n' + f.problem.value
+      );
+      window.location.href = 'mailto:EMAIL@YOURDOMAIN.COM?subject=' + subject + '&body=' + body;
+      const status = document.getElementById('form-status');
+      status.textContent = 'Opening your email client...';
+      status.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
